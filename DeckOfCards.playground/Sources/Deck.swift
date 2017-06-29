@@ -6,7 +6,7 @@
 //
 //
 
-import UIKit
+import Foundation
 
 public class Deck {
     /// List of cards in the deck

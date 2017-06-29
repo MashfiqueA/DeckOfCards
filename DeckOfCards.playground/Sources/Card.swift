@@ -6,7 +6,6 @@
 //
 //
 
-import UIKit
 
 /** 
  Class representing Card (Conforms to the CustomStringConvertible
