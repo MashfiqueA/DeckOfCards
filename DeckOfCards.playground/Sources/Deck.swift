@@ -64,7 +64,7 @@ public class Deck {
     /**
      Deals one card from the deck
      
-     - Throws: `DeckError` if no cards left in the deck
+     - Throws: `DeckError.cannotDeal` if no cards left in the deck
      - Returns: Dealt `Card` from the top of the deck
      */
     public func dealOneCard() throws -> Card {
@@ -77,7 +77,7 @@ public class Deck {
     }
     
     
-    /// Returns a pseudo-random number between 0 and maxNumber
+    /// Generate a pseudo-random number between 0 and maxNumber
     private func random(max maxNumber: Int) -> Int {
         return Int(arc4random_uniform(UInt32(maxNumber)))
     }

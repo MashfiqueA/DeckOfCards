@@ -8,7 +8,7 @@
 
 
 /** 
- Class representing Card (Conforms to the CustomStringConvertible
+ Struct representing Card (Conforms to the CustomStringConvertible
  protocol to support description string, refer to class definition below)
 */
 public struct Card: CustomStringConvertible {

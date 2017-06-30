@@ -35,14 +35,16 @@ do {
         }
     }
     
-    // Try dealing a 53rd card. This raises the .cannotDeal
+    // Try dealing a 53rd card. This raises the DeckError.cannotDeal
     // error handled below
     _ = try deck2.dealOneCard()
     
 }
 catch DeckError.cannotShuffle {
+    // Handle error
     print("cannot shuffle deck")
 }
 catch DeckError.cannotDeal {
+    // Handle error
     print("cannot deal cards from the deck")
 }
